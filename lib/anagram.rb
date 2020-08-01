@@ -8,5 +8,6 @@ class Anagram
       if word.split(" ").sort == m.split(" ").sort
         return match
       end
+    end
   end
 end
