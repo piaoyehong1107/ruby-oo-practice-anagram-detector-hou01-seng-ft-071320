@@ -5,7 +5,8 @@ class Anagram
   end
   def match(anagrams)
     anagrams.each do |m|
-      word.split(" ").sort == m.split(" ").sort
-      m.
+      if word.split(" ").sort == m.split(" ").sort
+        return match
+      end
   end
 end
