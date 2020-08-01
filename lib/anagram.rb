@@ -7,10 +7,12 @@ class Anagram
   end
   
   def match(anagrams)
+    list=[]
     anagrams.each do |m|
       if (word.split("").sort == m.split("").sort)
-        puts m
+        list.push(m)
       end
     end
+    list
   end
 end
